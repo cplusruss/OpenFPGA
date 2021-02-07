@@ -1,0 +1,32 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_OUTPUT_EXCMD	mixed	/number, pattern, mixed, or combineV2/
+!_TAG_OUTPUT_FILESEP	slash	/slash or backslash/
+!_TAG_OUTPUT_MODE	u-ctags	/u-ctags or e-ctags/
+!_TAG_PATTERN_LENGTH_LIMIT	96	/0 for no limit/
+!_TAG_PROC_CWD	/Users/cplusruss/Dropbox/Workspace/Tutorials/OpenFPGA/template/	//
+!_TAG_PROGRAM_AUTHOR	Universal Ctags Team	//
+!_TAG_PROGRAM_NAME	Universal Ctags	/Derived from Exuberant Ctags/
+!_TAG_PROGRAM_URL	https://ctags.io/	/official site/
+!_TAG_PROGRAM_VERSION	5.9.0	/073c52a/
+_dut	tb.v	/^	dut _dut($/;"	i	module:tb
+_dut2	tb.v	/^	dut2 _dut2 (.a(a), .b(inv));$/;"	i	module:tb
+a	dut.v	/^	input a,$/;"	p	module:dut
+a	dut2.v	/^    input a,$/;"	p	module:dut2
+a	tb.v	/^	reg a;$/;"	r	module:tb
+b	dut.v	/^	input b$/;"	p	module:dut
+b	dut2.v	/^    output b$/;"	p	module:dut2
+b	tb.v	/^	reg b;$/;"	r	module:tb
+clk	dut.v	/^	input clk,$/;"	p	module:dut
+clk	tb.v	/^	reg clk;$/;"	r	module:tb
+counter	dut.v	/^reg [2:0] counter;$/;"	r	module:dut
+counter16	dut.v	/^reg [15:0] counter16;$/;"	r	module:dut
+counter16_2	dut.v	/^reg [15:0] counter16_2;$/;"	r	module:dut
+dut	dut.v	/^module dut ($/;"	m
+dut2	dut2.v	/^module dut2 ($/;"	m
+inv	tb.v	/^	wire inv;$/;"	n	module:tb
+q	dut.v	/^reg q;$/;"	r	module:dut
+reset	dut.v	/^	input reset,$/;"	p	module:dut
+reset	tb.v	/^	reg reset;$/;"	r	module:tb
+sr	dut.v	/^reg [3:0] sr;$/;"	r	module:dut
+tb	tb.v	/^module tb();$/;"	m
