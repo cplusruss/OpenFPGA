@@ -16,15 +16,24 @@ module tb();
 
 	dut2 _dut2 (.a(a), .b(inv));
 
-	initial begin
-		clk = 0;
-		reset = 1;
-		#2;
-		reset = 0;
+    task greset();
+        begin
+            clk   = 0; #0;
+            reset = 1; #2;
+            reset = 0; #0;
+        end
+    endtask
 
-		a = 1;
-		#5;
-		a = 0;
+    task stim();
+        begin
+            a = 1; #5;
+            a = 0; #5;
+        end
+    endtask
+
+	initial begin
+        greset();
+        stim();
 
 		//Time for simulation
 		#20
